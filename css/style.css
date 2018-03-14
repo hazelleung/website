@@ -1,0 +1,281 @@
+html{
+  font-family:sans-serif;
+  -ms-text-size-adjust:100%;
+  -webkit-text-size-adjust:100%
+}
+
+body{
+  margin:0;
+  background-color: #FFFFFF;
+}
+
+h1, h2, h3, h4{
+	font-family: "open sans", sans-serif;
+  color: #000000;
+  letter-spacing: 0.5px;
+}
+
+p{
+	font-family: "source sans pro", sans-serif;
+	font-size: 16px;
+	color: #000000;
+  letter-spacing: 0.5px;
+	font-weight: 300;
+  margin-top: 25px;
+  margin-bottom: 5px;
+}
+
+a{
+  color: #3ebda4;
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
+  display:block
+}
+
+.logo{
+  font-size: 35px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-decoration: none;
+  color: #000000;
+}
+
+li a{
+  font-size: 16px;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+li a:hover{
+  color: #3ebda4;
+}
+
+.navbar-toggle{
+  border: 1px solid #888888;
+}
+
+.navbar-nav{
+  float: right;
+}
+
+.header-margin{
+  padding: 1% 3%;
+}
+
+.underline{
+  border-bottom: 1px solid rgba(136, 136, 136, .5);
+}
+
+.section-title{
+  font-weight: 600;
+}
+
+.highlight{
+  display: table;
+  border-bottom: 3px solid  #3ebda4;
+  text-align: center;
+  padding-bottom: 7px;
+  margin: 0 auto 20px auto;
+  width: auto;
+}
+
+.highlight-subtitle{
+  display: table;
+  border-bottom: 3px solid  #3ebda4;
+  padding-bottom: 7px;
+  margin: 0 0 10px 0;
+  width: auto;
+}
+
+.about-margin{
+  margin: 3% 14%;
+  text-align: center;
+}
+
+.about-margin h1{
+  font-weight: 600;
+}
+
+.about-margin h4{
+  line-height: 1.5;
+}
+
+.socials{
+  display: block;
+  margin: 5% auto 3% auto;
+  width: 100%;
+  text-align: center;
+  float: left;
+}
+
+.social-btn{
+  width: max-content;
+  margin: 0 2% 0 2%;
+}
+
+ul.portfolio-grid{
+  padding-left: 0px;
+}
+
+.portfolio-grid{
+  position: relative;
+  margin: 30px auto;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+li.project{
+  width: 550px;
+  position: relative;
+  float: left;
+  padding: 0;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+}
+
+li.project-footer{
+  width: 350px;
+  position: relative;
+  float: left;
+  padding: 0;
+  margin-left: 15px;
+  margin-right: 15px;
+  margin-bottom: 30px;
+}
+
+.project-img{
+    width: 100%;
+    display: block;
+    overflow: hidden;
+}
+
+.portfolio-box {
+  position: relative;
+  display: block;
+  max-width: 650px;
+  margin: 0 auto; }
+  .portfolio-box .portfolio-box-caption {
+    position: absolute;
+    bottom: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #fff;
+    background: rgba(135, 135, 135, 0.9);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    transition: all 0.2s; }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
+      position: absolute;
+      top: 50%;
+      width: 100%;
+      transform: translateY(-50%);
+      text-align: center; }
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        padding: 0 15px;
+        font-family: "sofia-pro", sans-serif; }
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+        font-size: 16px;
+        font-weight: 600;
+        text-transform: uppercase; }
+      .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+        font-size: 20px; }
+  .portfolio-box:hover .portfolio-box-caption {
+    opacity: 1; }
+  .portfolio-box:focus {
+    outline: none; }
+  @media (min-width: 768px) {
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
+      font-size: 18px; }
+    .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+      font-size: 24px; } }
+
+.copyright{
+  text-align: center;
+}
+
+/* Project Pages*/
+.info-margin{
+  margin: 0% 13%;
+  padding: 2% 0 0 0;
+}
+
+.project-title{
+  display: table;
+  border-bottom: 3px solid  #3ebda4;
+  text-align: center;
+  padding-bottom: 10px;
+  margin: 20px auto 20px auto;
+}
+
+.project-subtitle{
+  text-align: center;
+}
+
+.roles-section{
+  margin: 3% 0 5% 0;
+}
+
+.role-title{
+  margin-bottom: 10px;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+.roles p{
+  margin: 0px;
+  font-size: 16px
+}
+
+.interview-resp{
+  margin: 0 3%;
+}
+
+.interview-resp ul li{
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "source sans pro", sans-serif;
+}
+
+.interview-resp ol li{
+  font-weight: normal;
+  font-size: 16px;
+  font-family: "source sans pro", sans-serif;
+}
+
+.btn {
+  font-family: "sofia-pro", sans-serif;
+  font-weight: 400;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  text-transform: uppercase;
+  border-radius: 0; }
+
+/* Projects Pages Buttons */
+.btn-project {
+  margin-top: 30px;
+  color: white;
+  border: 2px solid #3ebda4;
+  outline: none;
+  font-weight: 400;
+  background-color: #3ebda4; }
+  .btn-project:focus, .btn-project:hover {
+    color: #3ebda4;
+    border: 2px solid  #3ebda4;
+    background-color: transparent;
+}
+
+/* About Page */
+.profile-img{
+  width: 100%;
+  margin-right: 30px;
+  display: block;
+  overflow: hidden;
+}

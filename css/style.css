@@ -147,7 +147,8 @@ li.project-footer{
 }
 
 .project-img{
-    width: 100%;
+    width: 95%;
+    margin: 5px auto 0px auto;
     display: block;
     overflow: hidden;
 }
@@ -198,6 +199,10 @@ li.project-footer{
 
 .copyright{
   text-align: center;
+}
+
+.copyright p{
+    font-size: 13px;
 }
 
 /* Project Pages*/
@@ -267,6 +272,22 @@ li.project-footer{
   font-weight: 400;
   background-color: #3ebda4; }
   .btn-project:focus, .btn-project:hover {
+    color: #3ebda4;
+    border: 2px solid  #3ebda4;
+    background-color: transparent;
+}
+
+.btn-about{
+  width: 200px;
+  margin: 10px 25px 5px 0px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  color: white;
+  border: 2px solid #3ebda4;
+  outline: none;
+  font-weight: 400;
+  background-color: #3ebda4; }
+  .btn-about:focus, .btn-about:hover {
     color: #3ebda4;
     border: 2px solid  #3ebda4;
     background-color: transparent;

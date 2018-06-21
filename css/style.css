@@ -9,7 +9,7 @@ body{
   background-color: #FFFFFF;
 }
 
-h1, h2, h3, h4{
+h1, h2, h3, h4, h5{
 	font-family: "open sans", sans-serif;
   color: #000000;
   letter-spacing: 0.5px;
@@ -58,6 +58,14 @@ li a:hover{
 
 .navbar-nav{
   float: right;
+}
+
+.project-header {
+    display: table;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    color: #FFFFFF;
 }
 
 .header-margin{
@@ -115,40 +123,23 @@ li a:hover{
   margin: 0 2% 0 2%;
 }
 
-ul.portfolio-grid{
-  padding-left: 0px;
-}
-
-.portfolio-grid{
-  position: relative;
-  margin: 30px auto;
-  overflow: hidden;
-  list-style-type: none;
-}
-
-li.project{
-  width: 550px;
-  position: relative;
-  float: left;
-  padding: 0;
-  margin-left: 10px;
-  margin-right: 10px;
-  margin-bottom: 30px;
-}
-
-li.project-footer{
-  width: 350px;
-  position: relative;
-  float: left;
-  padding: 0;
-  margin-left: 15px;
-  margin-right: 15px;
-  margin-bottom: 30px;
-}
-
 .project-img{
-    width: 95%;
+    width: 100%;
     margin: 5px auto 0px auto;
+    display: block;
+    overflow: hidden;
+}
+
+.process-img{
+    width: 75%;
+    margin: 5px auto 5px auto;
+    display: block;
+    overflow: hidden;
+}
+
+.footer-img{
+    width: 95%;
+    margin: 2px auto 2px auto;
     display: block;
     overflow: hidden;
 }
@@ -207,7 +198,7 @@ li.project-footer{
 
 /* Project Pages*/
 .info-margin{
-  margin: 0% 13%;
+  margin: 0% 11%;
   padding: 2% 0 0 0;
 }
 
@@ -221,10 +212,16 @@ li.project-footer{
 
 .project-subtitle{
   text-align: center;
+    padding: 0 0 30px 0;
 }
 
 .roles-section{
   margin: 3% 0 5% 0;
+}
+
+/* text highlight */
+span{
+    background-color:rgba(151,216,215,0.5)
 }
 
 .role-title{

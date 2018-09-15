@@ -26,7 +26,7 @@ p{
 }
 
 a{
-  color: #3ebda4;
+  color: #2D5D7B;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
@@ -49,7 +49,7 @@ li a{
 }
 
 li a:hover{
-  color: #3ebda4;
+  color: #2D5D7B;
 }
 
 .navbar-toggle{
@@ -82,7 +82,7 @@ li a:hover{
 
 .highlight{
   display: table;
-  border-bottom: 3px solid  #3ebda4;
+  border-bottom: 3px solid  #2D5D7B;
   text-align: center;
   padding-bottom: 7px;
   margin: 0 auto 20px auto;
@@ -91,7 +91,7 @@ li a:hover{
 
 .highlight-subtitle{
   display: table;
-  border-bottom: 3px solid  #3ebda4;
+  border-bottom: 3px solid  #2D5D7B;
   padding-bottom: 7px;
   margin: 0 0 10px 0;
   width: auto;
@@ -264,13 +264,13 @@ span{
 .btn-project {
   margin-top: 30px;
   color: white;
-  border: 2px solid #3ebda4;
+  border: 2px solid #2D5D7B;
   outline: none;
   font-weight: 400;
-  background-color: #3ebda4; }
+  background-color: #2D5D7B; }
   .btn-project:focus, .btn-project:hover {
     color: #3ebda4;
-    border: 2px solid  #3ebda4;
+    border: 2px solid  #2D5D7B;
     background-color: transparent;
 }
 
@@ -280,13 +280,13 @@ span{
   margin-top: 10px;
   margin-bottom: 5px;
   color: white;
-  border: 2px solid #3ebda4;
+  border: 2px solid #2D5D7B;
   outline: none;
   font-weight: 400;
-  background-color: #3ebda4; }
+  background-color: #2D5D7B; }
   .btn-about:focus, .btn-about:hover {
-    color: #3ebda4;
-    border: 2px solid  #3ebda4;
+    color: #2D5D7B;
+    border: 2px solid  #2D5D7B;
     background-color: transparent;
 }
 

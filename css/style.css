@@ -82,10 +82,10 @@ li a:hover{
 
 .highlight{
   display: table;
-  border-bottom: 3px solid  #2D5D7B;
+  border-bottom: 3px solid #2D5D7B;
   text-align: center;
   padding-bottom: 7px;
-  margin: 0 auto 20px auto;
+  margin: 0 auto 0 auto;
   width: auto;
 }
 
@@ -93,13 +93,14 @@ li a:hover{
   display: table;
   border-bottom: 3px solid  #2D5D7B;
   padding-bottom: 7px;
-  margin: 0 0 10px 0;
+  margin: 0 0 0px 0;
   width: auto;
 }
 
 .about-margin{
   margin: 3% 14%;
   text-align: center;
+    margin: 0 auto 0 auto;
 }
 
 .about-margin h1{
@@ -207,12 +208,23 @@ li a:hover{
   border-bottom: 3px solid  #2D5D7B;
   text-align: center;
   padding-bottom: 10px;
-  margin: 20px auto 20px auto;
+  margin: 20px auto 0px auto;
 }
 
 .project-subtitle{
   text-align: center;
     padding: 0 0 30px 0;
+}
+
+.bottom-highlight{
+    display: table;
+    margin: 0 auto 20px auto;
+    border-bottom: 3px solid #AFBED1;
+}
+
+.bottom-highlight2{
+    display: table;
+    border-bottom: 3px solid #AFBED1;
 }
 
 .roles-section{
@@ -272,7 +284,7 @@ span{
   font-weight: 400;
   background-color: #2D5D7B; }
   .btn-project:focus, .btn-project:hover {
-    color: #3ebda4;
+    color: #2D5D7B;
     border: 2px solid  #2D5D7B;
     background-color: transparent;
 }

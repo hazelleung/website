@@ -82,7 +82,7 @@ li a:hover{
 
 .highlight{
   display: table;
-  border-bottom: 3px solid #2D5D7B;
+  border-bottom: 4px solid #2D5D7B;
   text-align: center;
   padding-bottom: 7px;
   margin: 0 auto 0 auto;
@@ -91,7 +91,7 @@ li a:hover{
 
 .highlight-subtitle{
   display: table;
-  border-bottom: 3px solid  #2D5D7B;
+  border-bottom: 4px solid  #2D5D7B;
   padding-bottom: 7px;
   margin: 0 0 0px 0;
   width: auto;
@@ -158,8 +158,8 @@ li a:hover{
     height: 100%;
     text-align: center;
     opacity: 0;
-    color: #fff;
-    background: rgba(135, 135, 135, 0.9);
+    color: #000;
+    background: rgba(252, 252, 252, 0.99);
     -webkit-transition: all 0.2s;
     -moz-transition: all 0.2s;
     transition: all 0.2s; }
@@ -306,9 +306,41 @@ span{
 }
 
 /* About Page */
-.profile-img{
-  width: 100%;
-  margin-right: 30px;
-  display: block;
-  overflow: hidden;
+@media (max-width: 599px) {
+    .profile-img{
+        width: 215px;
+        margin-right: 30px;
+        margin-bottom: 35px;
+        display: block;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 600px) {
+    .profile-img{
+        width: 325px;
+        margin-right: 30px;
+        margin-bottom: 35px;
+        display: block;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 768px) {
+    .profile-img{
+        width: 60%;
+        margin-right: 30px;
+        margin-bottom: 35px;
+        display: block;
+        overflow: hidden;
+    }
+}
+
+@media (min-width: 992px) {
+    .profile-img{
+        width: 100%;
+        margin-right: 30px;
+        display: block;
+        overflow: hidden;
+    }
 }

@@ -101,6 +101,10 @@ li a:hover{
   width: auto;
 }
 
+.greeting{
+    padding-top: 25px;
+}
+
 .about-margin{
   margin: 3% 14%;
   text-align: center;

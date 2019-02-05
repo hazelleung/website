@@ -26,7 +26,7 @@ p{
 }
 
 a{
-  color: #2D5D7B;
+    color: #2D5D7B;
 }
 
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{
@@ -37,12 +37,24 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
     margin-bottom: 0;
 }
 
+.navbar-collapse{
+    padding-right: 0;
+}
+
+.navbar-header{
+    text-decoration: none;
+}
+
 .logo{
-  font-size: 35px;
-  font-weight: 500;
-  letter-spacing: 1px;
-  text-decoration: none;
-  color: #000000;
+    font-size: 35px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: #000000;
+    float: left;
+}
+
+a.logo{
+    text-decoration: none;  
 }
 
 li a{
@@ -64,6 +76,12 @@ li a:hover{
   float: right;
 }
 
+.layout-buffer{
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 35px;
+}
+
 .project-header {
     display: table;
     width: 100%;
@@ -73,7 +91,10 @@ li a:hover{
 }
 
 .header-margin{
-  padding: 1% 3%;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 .underline{
@@ -121,15 +142,18 @@ li a:hover{
 
 .socials{
   display: block;
-  margin: 3% auto 0.5% auto;
+  margin: 3% auto 3% auto;
   width: 100%;
   text-align: center;
   float: left;
 }
 
-.social-btn{
-  width: max-content;
-  margin: 0 0.5% 0 0.5%;
+.socials>a{
+    text-decoration: none;
+}
+
+.icons{
+    padding-right: 10px;
 }
 
 .project-img{
@@ -189,7 +213,8 @@ li a:hover{
     outline: none; }
   @media (min-width: 768px) {
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
-      font-size: 18px; }
+        padding-top: 10px;
+      font-size: 16px; }
     .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
       font-size: 24px; } }
 
@@ -327,22 +352,6 @@ span{
   font-weight: 400;
   background-color: #2D5D7B; }
   .btn-project:focus, .btn-project:hover {
-    color: #2D5D7B;
-    border: 2px solid  #2D5D7B;
-    background-color: transparent;
-}
-
-.btn-about{
-  width: 200px;
-  margin: 10px 25px 5px 0px;
-  margin-top: 10px;
-  margin-bottom: 5px;
-  color: white;
-  border: 2px solid #2D5D7B;
-  outline: none;
-  font-weight: 400;
-  background-color: #2D5D7B; }
-  .btn-about:focus, .btn-about:hover {
     color: #2D5D7B;
     border: 2px solid  #2D5D7B;
     background-color: transparent;

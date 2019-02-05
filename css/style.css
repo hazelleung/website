@@ -46,7 +46,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,secti
 }
 
 .logo{
-    font-size: 35px;
+    font-size: 40px;
     font-weight: 500;
     letter-spacing: 1px;
     color: #000000;
@@ -93,12 +93,13 @@ li a:hover{
 .header-margin{
     padding-left: 10vw;
     padding-right: 10vw;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .underline{
-  border-bottom: 1px solid rgba(136, 136, 136, .5);
+  /*border-bottom: 1px solid rgba(45, 93, 123, 1);*/
+    border-bottom: 1px solid rgba(123, 123, 123, 0.5);
 }
 
 .section-title{

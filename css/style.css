@@ -91,8 +91,8 @@ li a:hover{
 }
 
 .header-margin{
-    padding-left: 10vw;
-    padding-right: 10vw;
+    padding-left: 7vw;
+    padding-right: 7vw;
     padding-top: 15px;
     padding-bottom: 15px;
 }
@@ -321,12 +321,19 @@ span{
     margin-bottom: 35px;
 }
 
-.theme-box .spacing{
-    margin-top: 10px;
+.theme-card{
+    box-shadow: none;
+    border: medium none;
+    border-radius: 10px 10px 10px 10px;
+    padding: 20px;
+    margin-bottom: 15px;
+    background-color: #eee;
 }
 
-.theme-box .quote-text{
-    color: #44444f;
+.theme-card .quote-text{
+    border-left: 2px solid #999;
+    padding-left: 15px;
+    color: #55555f;
 }
 
 .vcenter {

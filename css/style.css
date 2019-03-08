@@ -10,19 +10,19 @@ body{
 }
 
 h1, h2, h3, h4, h5{
-	font-family: "open sans", sans-serif;
-  color: #000000;
-  letter-spacing: 0.5px;
+    font-family: "open sans", sans-serif;
+    color: #000000;
+    letter-spacing: 0.5px;
 }
 
 p{
-	font-family: "source sans pro", sans-serif;
-	font-size: 18px;
+	font-family: "open sans", sans-serif;
+	font-size: 17px;
 	color: #000000;
-  letter-spacing: 0.5px;
+    letter-spacing: 0.5px;
 	font-weight: 300;
-  margin-top: 25px;
-  margin-bottom: 5px;
+    margin-top: 25px;
+    margin-bottom: 5px;
 }
 
 a{
@@ -290,6 +290,7 @@ span{
     font-weight: bold;
 }
 
+/* Project roles */
 .role-title{
     display: table;
     margin-left: auto;
@@ -305,42 +306,85 @@ span{
   font-size: 16px
 }
 
-.theme-flex{
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    margin-top: 25px;
-}
-
-.problem-box{
-    width: 375px;
-}
-
-.theme-box{
-    width: 305px;
-    margin-bottom: 35px;
-}
-
+/* Interview + Results Themes */
 .theme-card{
-    box-shadow: none;
+    box-shadow: 0 0 14px 2px #DDD;
     border: medium none;
     border-radius: 10px 10px 10px 10px;
+    margin-top: 35px;
     padding: 20px;
-    margin-bottom: 15px;
+    margin-bottom: 25px;
     background-color: #eee;
 }
 
 .theme-card .quote-text{
+    font-size: 15px;
     border-left: 2px solid #999;
     padding-left: 15px;
     color: #55555f;
 }
 
-.vcenter {
-    display: inline-block;
-    vertical-align: middle;
-    float: none;
+/* Personas */
+.persona{
+    display: flex;
+    margin-top: 35px;
+    border-radius: 30px;
+    background-color: #eee;
+    box-shadow: 0 0 14px 2px #DDD;
+}
+
+.persona-cols{
+    flex: 1;
+    border-radius: 30px;
+}
+
+.persona-col-left{
+    padding: 3em 2em;
+    max-width: 300px;
+    min-width: 200px;
+    border-radius: 30px 0 0 30px;
+    text-align: center;
+}
+
+.persona-col-left h3{
+    color: white;
+}
+
+.persona-col-left p{
+    color: white;
+}
+
+.persona-col-right{
+    padding: 2em;
+}
+
+.persona-col-right ul, li{
+    font-family: "open sans", sans-serif;
+    font-size: 16px;
+}
+
+.user-img{
+    width: 180px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/* Testing Results */
+.test-card{
+    box-shadow: 0 0 14px 2px #DDD;
+    text-align: center;
+    border: medium none;
+    border-radius: 10px 10px 10px 10px;
+    margin-top: 30px;
+    padding: 20px;
+    margin-bottom: 25px;
+    background-color: #eee;
+}
+
+.test-img{
+    width: 180px;
+    overflow: hidden;
+    margin: auto;
 }
 
 /* buttons */
@@ -368,41 +412,66 @@ span{
 }
 
 /* About Page */
-@media (max-width: 599px) {
+.profile-img{
+    width: 100%;
+    height: auto;
+    margin-right: 30px;
+    margin-bottom: 35px;
+    display: block;
+    overflow: hidden;
+}
+
+/* Responsive Design */
+@media all and (max-width: 480px) {
     .profile-img{
-        width: 215px;
+        width: 75%;
+        height: auto;
         margin-right: 30px;
         margin-bottom: 35px;
         display: block;
         overflow: hidden;
     }
+    .persona {
+        display: inline-block;
+    }
+    .persona-col-left {
+        min-width: 100%;
+        border-radius: 30px 30px 0 0;
+    }
 }
 
-@media (min-width: 600px) {
+@media (max-width: 736px) {
     .profile-img{
-        width: 325px;
+        width: 75%;
+        height: auto;
         margin-right: 30px;
         margin-bottom: 35px;
         display: block;
         overflow: hidden;
     }
+    .persona {
+        display: inline-block;
+    }
+    .persona-col-left {
+        min-width: 100%;
+        border-radius: 30px 30px 0 0;
+    }
 }
 
-@media (min-width: 768px) {
+@media (max-width: 981px){
     .profile-img{
-        width: 60%;
+        width: 75%;
+        height: auto;
         margin-right: 30px;
         margin-bottom: 35px;
         display: block;
         overflow: hidden;
     }
-}
-
-@media (min-width: 992px) {
-    .profile-img{
-        width: 100%;
-        margin-right: 30px;
-        display: block;
-        overflow: hidden;
+    .persona {
+        display: inline-block;       
+    }
+    .persona-col-left {
+        min-width: 100%;
+        border-radius: 30px 30px 0 0;
     }
 }

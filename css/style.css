@@ -389,13 +389,17 @@ span{
 
 /* buttons */
 .btn {
-  font-family: "sofia-pro", sans-serif;
+  font-family: "open sans", sans-serif;
   font-weight: 400;
+    letter-spacing: 0.5px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
   text-transform: uppercase;
-  border-radius: 0; }
+  border-radius: 0;    
+    box-shadow: 0 0 14px 2px #DDD;
+
+}
 
 /* Projects Pages Buttons */
 .btn-project {

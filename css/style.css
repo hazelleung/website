@@ -306,6 +306,36 @@ span{
   font-size: 16px
 }
 
+/* Stakeholders */
+.stakeholder{
+    margin-top: 35px;
+}
+
+.stakeholder-card{
+    border-radius: 30px;   
+}
+
+.stakeholder-content{
+    background-color: #eee;
+    box-shadow: 0 0 14px 2px #DDD;
+    padding: 1em 2em 2em 2em;
+}
+
+.stakeholder-chart-outer{
+    display: flex;
+    background-color: #eee;
+    box-shadow: 0 0 14px 2px #DDD;
+    margin-top: 35px;
+    padding: 1em 2em 1em 2em;
+}
+
+.stakeholder-chart-col{
+    flex: 1;
+    background-color: #f6f6f6;
+    margin: 1em;
+    padding: 1em 1em 2em 1em;
+}
+
 /* Interview + Results Themes */
 .theme-card{
     box-shadow: 0 0 14px 2px #DDD;
@@ -382,7 +412,7 @@ span{
 }
 
 .test-img{
-    width: 180px;
+    width: 150px;
     overflow: hidden;
     margin: auto;
 }

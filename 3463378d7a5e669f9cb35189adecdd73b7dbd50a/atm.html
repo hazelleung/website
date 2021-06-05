@@ -1,0 +1,514 @@
+<html>
+
+<head>
+	<title>Audio Tag Manager at NPR - Hazel Leung</title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+	<meta name="description" content="A mobile web app to help track shared responsibilites between those who live together.">
+    <meta name="keywords" content="Hazel Leung, Hazel, Leung, UCSD, UC San Diego, UX, UI, UX Designer, UX Researcher, Interaction Design, Experience Design, Human-Computer Interaction, HCI, Design, Web Development">
+    <meta name="author" content="Hazel Leung">
+
+	<!-- Search Engine Crawling -->
+    <meta name="robots" content="index,follow">
+
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-110879591-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-110879591-1');
+	</script>
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Source+Sans+Pro" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<!--<link href="/css/bootstrap-theme.min.css" rel="stylesheet">-->
+
+	<!-- Icons -->
+	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet">
+
+	<!-- Styling -->
+	<link href="css/style.css" rel="stylesheet">
+    
+    <!-- Animations -->
+    <link href="css/animate.css" rel="stylesheet">
+    <link href="js/animations/aos/dist/aos.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+	<!-- Navigtaion -->
+	<nav class="navbar">
+        <div class="container-fluid underline header-margin">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+				    <i class="fas fa-bars"></i>
+                </button>
+                <a class="logo" href="index">Hazel Leung</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="projects">Projects</a></li>
+                    <li><a href="index">About</a></li>
+                    <li><a href="images/HazelLeungResume.pdf" target="_blank">Resume</a></li>
+                </ul>
+            </div>
+        </div>
+	</nav>
+
+	<!-- Main Body -->
+		<div class="info-margin">
+            
+            <div class= "bottom-highlight">
+                <h1 class="project-title">Audio Tag Manager (ATM)</h1>
+            </div>
+            <h3 class="project-subtitle">A standalone tool for NPR podcast producers to tag their episodes for sponsorship.</h3>
+            
+            <!--TODO -----
+            <img src="./images/projects/eqWebsiteCover.png" class="project-img" data-aos="fade-in" data-aos-once="true">--> 
+
+            <!-- Role/User/Tool used info -->
+            <section class="roles-section text-center">
+                <div class="row">
+                    <div class="col-md-4">
+                        <h3 class="role-title">My Role</h3>
+                        <div class="roles">
+                            <p>Product Designer</p>
+                            <p>Usability Researcher</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="role-title">Context</h3>
+                        <div class="roles">
+                            <p>NPR</p>
+                            <p>July 2019 - May 2020</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <h3 class="role-title">Tools Used</h3>
+                        <div class="roles">
+                            <p>Usability Testing</p>
+                            <p>Figma</p>
+				        </div>
+                    </div>
+                </div>
+            </section>
+            
+            <!-- Design Process
+            <div class= "bottom-highlight2">
+                <h3 class="highlight-subtitle">Design Process</h3>
+            </div>
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="./images/projects/eqWebsite/eqWebsiteProcess2.png" class="process-img" data-aos="fade-in" data-aos-once="true" style="margin-top: 0">
+                    <h4 class="highlight" style="align-text: center">Research</h4>
+                    <p style="text-align: center">Personas</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="./images/projects/eqWebsite/eqWebsiteProcess1.png" class="process-img" data-aos="fade-in" data-aos-once="true" style="margin-top: 0">
+                    <h4 class="highlight" style="align-text: center">Ideation</h4>
+                    <p style="text-align: center">Wireframes</p>
+                </div>
+                <div class="col-sm-4">
+                    <img src="./images/projects/eqWebsite/eqWebsiteProcess3.png" class="process-img" data-aos="fade-in" data-aos-once="true" style="margin-top: 0">
+                    <h4 class="highlight" style="align-text: center">Refinement</h4>
+                    <p style="text-align: center">Implementation</p>
+                </div>
+            </div> -->
+
+            <hr>
+            
+            <!-- Challenge & Goal Section -->
+            <div class= "bottom-highlight2">
+  			   <h3 class="highlight-subtitle">The Problem & Opportunity</h3>
+            </div>
+            <p>Podcast sponsorship, as a whole, is a NPR revenue powerhouse that was projected (pre-pandemic) to contribute $55 million in revenue in fiscal 2020. Of podcast sponsorship, dynamic midroll sponsorship, which has the greatest projection for growth, contributes close to $17 million annually.</p>
+            
+            <p>The previous tool used to mark episodes for sponsorship had limited capabilities and was part of the overarching NPR CMS, which is being sunsetted for a new CMS. As such, this provided an opportunity to improve a tool that was key to annual revenue and to expand the tool's capabilities to serve more needs.</p>
+            
+            <p>ATM is a standalone tool for podcast producers to mark their podcast episodes for sponsorship. This is inclusive of both dynamic midroll and baked-in sponsorship. This was as cross-divisional project that spanned the core tech team in the Digital Media department, the podcast ad operations team in National Public Media (NPM, NPR's corporate sponsorship organization), and podcast producers in the News/Programming department. It also included work with our 3rd party sponsorship vendor, AdsWizz.</p>
+
+            <hr>
+            
+            <!-- User Interview Section -->
+            <div class= "bottom-highlight2">
+  			   <h3 class="highlight-subtitle">Original Prototype Tool Usability Testing</h3>
+            </div>
+            <p>Before I joined the project, a contractor team built a prototype tool based on using similar specs that were meant for a different use case. The tech stack for the prototype tool was the basis for Audio Tag Manager (ATM).</p>
+            
+            <p>As such, </p>
+            
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-in" data-aos-once="true">
+                    <div class="theme-card">
+                        <h3 class="blue">1. Get the Quick & Dirty</h3> 
+                        <p class="spacing">Students and instructors are busy people! Providing quick links can be helpful.</p>
+                        <p class="quote-text">"I want to be able to easily find what I want right from the start. I don't want to have to scroll somewhere to find the information I'm interested in."</p>
+                    </div>
+                </div>   
+                <div class="col-md-6" data-aos="fade-in" data-aos-once="true">
+                    <div class="theme-card">
+                        <h3 class="blue">2. Why Should Someone Care?</h3> 
+                        <p class="spacing">What makes this journal important or interesting? To a student? An instructor? A random visitor? </p>
+                        <p class="quote-text">"I think the mission of the journal is really important and it provides an amazing opportunity to get student work out there. "</p>
+                    </div>
+                </div>    
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-in" data-aos-once="true">
+                    <div class="theme-card">
+                        <h3 class="blue">3. How do You Get Involved?</h3> 
+                        <p class="spacing">Provide some call to action. If someone likes the journal, how can they get involved? Be specific and have multiple ways to get to the pages that detail how people can get involved with the journal. </p>
+                        <p class="quote-text">"I first heard about a publishing opportunity at The Equilibrium through a professor. I only wanted to know where I can submit my research to be considered."</p>
+                    </div>
+                </div>   
+                <div class="col-md-6" data-aos="fade-in" data-aos-once="true">
+                    <div class="theme-card">
+                        <h3 class="blue">4. Is This Journal Reputable?</h3>
+                        <p class="spacing">People want to know whether or not this journal is something worth looking into or getting involved with. Provide evidence of past success and/or of works in progress.</p>
+                        <p class="quote-text">"I've never heard of The Equilibrium before. But apparently, they already have 4 complete journals out! It was amazing to see student work come together into an impressive product."</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <hr>
+                        
+            <!-- Personas Section -->
+            <div class= "bottom-highlight2">
+  			   <h3 class="highlight-subtitle">Personas</h3>
+            </div>
+            <p>In order to include all of the journal's target users, I created personas to identify each group's goals, need, and attitude. These personas helped guide my designs to ensure they addressed user needs.</p>
+            
+            <div class="persona" data-aos="fade-in" data-aos-once="true">
+                <div class="persona-cols persona-col-left" style="background: #9E1F63">
+                    <img src="./images/projects/eqWebsite/eqWebsitePersona1.png" class="user-img">
+                        <h3>Alex</h3>
+                        <p>Freshman student<br>
+                            Looking to get involved<br>
+                            Interested in research</p>  
+                </div>
+                <div class="persona-cols persona-col-right">
+                    <p>Alex is looking for a way to get involved in an on campus organization. He found university resources and attended club fairs, but he still doesn't entirely know which one to join. </p>
+                    <br>
+                    <h4>Goals</h4>
+                    <ul>
+                        <li>Find out what an organization does and has to offer a member</li>
+                        <li>Know who to contact/where to go if he has questions</li>
+                    </ul>
+                    <br>
+                    <h4>Frustrations</h4>
+                    <ul>
+                        <li>Needing to really dig for information he's looking for</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="persona" data-aos="fade-in" data-aos-once="true">
+                <div class="persona-cols persona-col-left" style="background: #27AAE1">
+                    <div class="profile">
+                        <img src="./images/projects/eqWebsite/eqWebsitePersona2.png" class="user-img">
+                        <h3>Erika</h3>
+                        <p>Senior student<br>
+                        Visual Arts major<br>
+                        Trying to get published</p>
+                    </div>
+                </div>
+                <div class="persona-cols persona-col-right">
+                    <p>Erika wants to publish her honors thesis research. She's looking for a on campus journal that isn't just for science majors. She just wants to know what she can do to get thesis published.</p>
+                    <br>
+                    <h4>Goals</h4>
+                    <ul>
+                        <li>Find out if she is eligible to publish her research at this journal</li>
+                        <li>Understand the submission and editorial processes</li>
+                    </ul>
+                    <br>
+                    <h4>Frustrations</h4>
+                    <ul>
+                        <li>Not having a transparent policy and/or clear steps to follow</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="persona" data-aos="fade-in" data-aos-once="true">
+                <div class="persona-cols persona-col-left" style="background: #2BB673">
+                    <div class="profile">
+                        <img src="./images/projects/eqWebsite/eqWebsitePersona3.png" class="user-img">
+                        <h3>Devon</h3>
+                        <p>Professor<br>
+                        Biology Department<br>
+                        Very busy</p>
+                    </div>
+                </div>
+                <div class="persona-cols persona-col-right">
+                    <p>Devon likes to keep up with student opportunities to pass along to her students. She's very busy with teaching and her own research lab, so she doesn't have much time to really read entire websites.</p>
+                    <br>
+                    <h4>Goals</h4>
+                    <ul>
+                        <li>Learn the quick facts of an organization from the website</li>
+                        <li>Be able to pass along resources/info to her students</li>
+                    </ul>
+                    <br>
+                    <h4>Frustrations</h4>
+                    <ul>
+                        <li>Not having a website link to give to people so they can look</li>
+                    </ul>
+                </div>
+            </div>
+
+            <hr>
+            
+            <!-- Challenge & Goal Section -->
+            <div class= "bottom-highlight2">
+  			   <h3 class="highlight-subtitle">Wireframes</h3>
+            </div>
+            <p>I used Sketch to create low-fidelity website wireframes of the website to visualize layout, information placement, and outline the information architecture.</p>
+            
+            <div class="row" style="margin-bottom: 30px">
+                <div class="col-md-6" data-aos="fade-right" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/eqWebsiteWireframe1.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/eqWebsiteWireframe2.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/eqWebsiteWireframe3.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/eqWebsiteWireframe4.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+            </div>
+            
+            <p>Additionally, I put the wireframes in an interactive prototype and tested the website design. I asked 5 people (ranging from students, staff, and faculty) and observed what they did when given an objective. These lightning test rounds helped validate my deisgns, so I proceeded to develop the website pages using HTML, CSS, and JavaScript. </p>
+
+            <hr>
+            
+            <!-- Homepage -->
+            <div class= "bottom-highlight2">
+  			   <h3 class="highlight-subtitle">Homepage</h3>
+            </div>
+            <p>The homepage was the biggest opportunity to improve branding and usability because it is the first page that visitors see when they go on the website. The old website homepage had minimal information as to what The Equilibrium was. The only content was an events calendar that was empty for more than 90% of the time, which meant that the rest of the page was empty. </p>
+            <p>In the redesign, the landing section of the homepage is a maroon geometric background in order to create a stronger brand image. Additionally, I included quick links below the journal name for users to easily access the information they want: what the journal is, what it does, and how to get involved with the journal. In addition to quick links, there are short information blurbs to give more information about each section.</p>
+            
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/homepageVOld1.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/homepageNew1.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+            </div>
+            <div class="row">
+                    <div class="col-md-6" data-aos="fade-right" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/homepageVOld2.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/homepageNew2.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+            </div>
+            
+            <hr>
+            
+            <!-- About, Team, Applications -->
+            <div class= "bottom-highlight2">
+  			   <h3 class="highlight-subtitle">Application Pages</h3>
+            </div>
+            <p>Submitting a manuscript to publish is different from applying to join the journal's editorial board. Thus, I changed the site's architecture. I created two separate pages: one "Submit" page for authors to learn how to submit their research for consideration and one "Join" page for students who want to join the journal.</p>
+            
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/joinVOld.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/joinNew.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/homepageVOld2.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/submitNew.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+            </div>
+            
+            <hr>
+            
+            <!-- Publications -->
+            <div class= "bottom-highlight2">
+  			   <h3 class="highlight-subtitle">Publication Pages</h3>
+            </div>
+            <p>These pages were the biggest opportunity to expand our readership and show people what we do. The original page only had links to the online readers. However, there was a lot of new information to include and we wanted the website to be a hub for all journal publications. </p>
+            <p>I included sections for the online readers, our involvement with eScholarship, and individual articles in order to be a showcase of the journal's work, the organization growth, and increased involvement with the UC San Diego and UC system community. </p>
+            
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/publicationsVOld.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/publicationsNew1.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-right" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/homepageVOld2.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+                <div class="col-md-6" data-aos="fade-left" data-aos-once="true">
+                    <img src="./images/projects/eqWebsite/publicationsNew2.png" class="project-img" data-aos="fade-in" data-aos-once="true">
+                </div>
+            </div>
+            
+            <hr>
+            
+            <!-- Usability Testing -->
+            <div class= "bottom-highlight2">
+  			   <h3 class="highlight-subtitle">Usability Testing</h3>
+            </div>
+            <p>I conducted a series of usability tests to ensure that the redesign was addressing the pain points and original problems. I tested with 9 people total, 3 people in each of the persona categories I identified. I asked them to accomplish tasks (e.g. find out how to submit a research piece, how can you contact the editorial board, where can you find past issues, etc.) and to think aloud when attempting to complete the tasks. During the task, I observed and noted their mouse movements and their spoken words. Additionally, I asked them debrief questions as well. </p>
+            
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-in" data-aos-once="true">
+                    <div class="test-card">
+                        <img src="./images/projects/eqWebsite/eqWebsiteTestingIcons2.png" class="test-img">
+                        <h3 class="blue">2/3 of participants clicked on the homepage quicklinks</h3>
+                        <p>The other 1/3 went to the gobal navigation bar.</p>
+                    </div>
+                </div>   
+                <div class="col-md-6" data-aos="fade-in" data-aos-once="true">
+                    <div class="test-card">
+                        <img src="./images/projects/eqWebsite/eqWebsiteTestingIcons1.png" class="test-img">
+                        <h3 class="blue">All participants could find the journal contact information</h3>
+                        <p>... but it should be way more obvious.</p>
+                    </div>
+                </div>    
+            </div>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-in" data-aos-once="true">
+                    <div class="test-card">
+                        <img src="./images/projects/eqWebsite/eqWebsiteTestingIcons3.png" class="test-img">
+                        <h3 class="blue">Easy to use and navigate</h3>
+                        <p>"Definitely couldn't get lost in this website."</p>
+                    </div>
+                </div>   
+                <div class="col-md-6" data-aos="fade-in" data-aos-once="true">
+                    <div class="test-card">
+                        <img src="./images/projects/eqWebsite/eqWebsiteTestingIcons4.png" class="test-img">
+                        <h3 class="blue">"I like it, but I don't love it."</h3>
+                        <p>Navigation and information hunting was easy, but the visual aesthetics could be better.</p>
+                    </div>
+                </div>    
+            </div>
+            
+            <hr>
+            
+            <!-- What's Next -->
+            <div class= "bottom-highlight2">
+  			   <h3 class="highlight-subtitle">Next Steps</h3>
+            </div>
+            <p>I think one of my biggest weakness as a designer, and also based on the usability tests I performed, is visual design. So, I will be revisiting the aesthetics of the website and find ways to make the visual design more appealing. </p>
+            <p>Additionally, the journal is growing! As more issues are published and the journal becomes more established, policies will change. As the journal changes, the website will need to change and address any different or additional user needs as well.</p>
+            
+            <hr>
+            
+            <!-- Reflection -->
+            <div class= "bottom-highlight2">
+  			   <h3 class="highlight-subtitle">Reflection</h3>
+            </div>
+            <p>Redesigning an entire website (even if it's a site that only has a few pages) took a lot of time. But, I found that I not only enjoyed the UX side of this project, but also the coding and development of a website from scratch. <span>This experience forced me to really understand the nuances of the HTML, CSS, and JavaScript.</span> This process was a practice of trial, error, and Googling, which has, ultimately, made me a better designer.</p>
+            
+            <!-- link to website-->
+            <section class="text-center">
+                <div class="row">
+                    <a href="http://warrenequilibrium.ucsd.edu/" class="btn btn-project btn-lg" target="_blank">Visit Website</a>
+                </div>
+            </section>
+            
+            
+	   </div>
+        
+    <hr>
+
+    <!-- See other work -->
+    <section class="container text-center">
+        <div class= "bottom-highlight">
+            <h3 class="highlight">View my other projects!</h3>
+        </div>
+            
+        <div class="row">
+            <!-- Music App -->
+            <div class="col-md-4">
+                <a class="portfolio-box" href="musicapp">
+				    <img class="project-img" src="images/projects/musicAppCover.png" alt="">
+				    <div class="portfolio-box-caption">
+				        <div class="portfolio-box-caption-content">
+							<div class="project-name highlight">Muse-ic</div>
+				        </div>
+				    </div>
+				</a>
+            </div>
+            
+            <!-- ChoreBoard App -->
+            <div class="col-md-4">
+                <a class="portfolio-box" href="choreboard">
+				    <img class="project-img" src="images/projects/choreboardCover.png" alt="">
+				    <div class="portfolio-box-caption">
+				        <div class="portfolio-box-caption-content">
+							<div class="project-name highlight">Chore Board</div>
+				        </div>
+				    </div>
+				</a>
+            </div>
+            
+            <!-- PlanIt -->
+            <div class="col-md-4">
+                <a class="portfolio-box" href="planit">
+				    <img class="project-img" src="images/projects/planItCover.png" alt="">
+				    <div class="portfolio-box-caption">
+				        <div class="portfolio-box-caption-content">
+				            <div class="project-name highlight">PlanIt</div>
+				        </div>
+				    </div>
+				</a>
+            </div>
+        </div>
+    </section>
+        
+	<!-- Footer -->
+    <div class="row">
+            <div class="socials">
+            <!-- Email Me -->
+            <a href="mailto:hhleung@ucsd.edu" target="_blank">
+                <i class="icons fas fa-envelope fa-lg"></i>
+            </a>        
+			<!-- View photos -->
+			<a href="http://www.vsco.co/hazelleung"  target="_blank">
+                <i class="icons fas fa-camera-retro fa-lg"></i>
+            </a>
+            <!-- Twitter -->
+            <a href="https://twitter.com/hazelleung"  target="_blank">
+                <i class="icons fab fa-twitter fa-lg"></i>
+            </a>
+            <!-- LinkedIn -->
+            <a href="https://www.linkedin.com/in/hazelhleung" target="_blank">
+                <i class="icons fab fa-linkedin fa-lg"></i>
+            </a>
+            </div>
+    </div>
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="js/animations/aos/dist/aos.js"></script>
+    <script>AOS.init();</script>
+
+    
+</body>
+</html>

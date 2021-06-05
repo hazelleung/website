@@ -503,7 +503,14 @@ span{
 /* password protection */
 .box {
 	border-radius: 3px;
-	background: rgba(101, 101, 101, 0.7); margin: auto; padding: 12px;
+	background: rgba(255,255,255); margin: auto; 
+    padding: 12px;
+}
+
+.box .btn{
+    background-color: #2D5D78;
+    color: white;
+    border-radius: 3px;
 }
 
 .lightbox {
@@ -533,16 +540,16 @@ div.vertical {
 }
 
 ::-webkit-input-placeholder {
-   color: #955;
+   color: #333;
    text-align: center;
 }
 
 ::-moz-placeholder {
-   color: #955;
+   color: #333;
    text-align: center;
 }
 
 :-ms-input-placeholder {
-   color: #955;
+   color: #333;
    text-align: center;
 }
